@@ -1,0 +1,21 @@
+name: StaffBroadcaster
+version: 1.0.0
+api: [1.0.0]
+author: Zzm
+description: BroadCast If Staff Online
+main: StaffBroadcaster/StaffBroadcaster
+
+commands:
+ music:
+  permission: StaffBroadcaster.commands
+  description: StaffBroadcaster Main Command
+  usage: /SB ON OFF
+
+permissions:
+ ALLSurvival:
+  default: op
+  description: StaffBroadcaster
+  children:
+     StaffBroadcaster.commands:
+      default: op
+      description: BroadCaster Commands
